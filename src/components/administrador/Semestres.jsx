@@ -21,10 +21,10 @@ function Semestres(props) {
 
     return (
         <select
-            defaultValue={'default'}
             onChange={(e) => setGestion(e.target.value)}
-            className="form-select">
-            <option selected disabled>Semestre</option>
+            className="form-select"
+            name="semestress">
+            <option value="0" disabled selected>Semestre</option>
             {
                 semestre?.map((data, index) => (
                     <option

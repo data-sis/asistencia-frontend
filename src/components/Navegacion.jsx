@@ -9,10 +9,7 @@ function Navegacion(props) {
     useEffect(() => {
         const verifyToken = async () => {
             await axios.get("administrador/verify", { headers: { "Authorization": `Bearer ${token}` } })
-                .then(res => {
-                }, err => {
-                    console.log(err)
-                })
+                .then(res => { }, err => { })
         }
         verifyToken()
     }, [token])

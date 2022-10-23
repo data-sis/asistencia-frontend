@@ -12,7 +12,7 @@ import Reporte from "./components/administrador/Reporte";
 import Editar from "./components/administrador/Editar";
 import axios from "axios";
 
-axios.defaults.baseURL = 'http://10.10.60.122:4000/api/'
+axios.defaults.baseURL = 'http://10.10.60.117:4000/api/'
 
 function App() {
 
